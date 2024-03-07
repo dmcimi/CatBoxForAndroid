@@ -79,7 +79,7 @@ fun Project.requireTargetAbi(): String {
             val targetTask = gradle.startParameter.taskNames[0].toLowerCase(Locale.ROOT).trim()
             when {
                 targetTask.contains("arm64") -> targetAbi = "arm64-v8a"
-                targetTask.contains("arm") -> targetAbi = "armeabi-v7a"
+               // targetTask.contains("arm") -> targetAbi = "armeabi-v7a"
                 targetTask.contains("x64") -> targetAbi = "x86_64"
                 targetTask.contains("x86") -> targetAbi = "x86"
             }
@@ -248,7 +248,7 @@ fun Project.setupApp() {
             }
         }
 
-        for (abi in listOf("Arm64", "Arm", "X64", "X86")) {
+        for (abi in listOf("Arm64", "X64", "X86")) {
             tasks.create("assemble" + abi + "FdroidRelease") {
                 dependsOn("assembleFdroidRelease")
             }
