@@ -1,18 +1,17 @@
 module libcore
 
-go 1.18
+go 1.20
 
 require (
-	github.com/codeclysm/extract v2.2.0+incompatible
 	github.com/matsuridayo/libneko v1.0.0 // replaced
 	github.com/matsuridayo/sing-box-extra v1.0.0 // replaced
-	github.com/miekg/dns v1.1.55
-	github.com/sagernet/sing v0.2.10-0.20230912050851-1453c7c8c20d
+	github.com/miekg/dns v1.1.57
+	github.com/sagernet/sing v0.3.0
 	github.com/sagernet/sing-box v1.0.0 // replaced
-	github.com/sagernet/sing-dns v0.1.9-0.20230911082806-425022bdc92b
-	github.com/sagernet/sing-tun v0.1.12-0.20230821065522-7545dc2d5641
-	github.com/ulikunitz/xz v0.5.10
-	golang.org/x/mobile v0.0.0-20220722155234-aaac322e2105
+	github.com/sagernet/sing-dns v0.1.12
+	github.com/sagernet/sing-tun v0.2.0-rc.1
+	github.com/ulikunitz/xz v0.5.11
+	golang.org/x/mobile v0.0.0-20231108233038-35478a0c49da
 )
 
 require (
