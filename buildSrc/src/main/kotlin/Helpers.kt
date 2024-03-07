@@ -166,9 +166,9 @@ fun Project.setupAppCommon() {
     setupCommon()
 
     val lp = requireLocalProperties()
-    val keystorePwd = lp.getProperty("KEYSTORE_PASS") ?: System.getenv("KEYSTORE_PASS")
-    val alias = lp.getProperty("ALIAS_NAME") ?: System.getenv("ALIAS_NAME")
-    val pwd = lp.getProperty("ALIAS_PASS") ?: System.getenv("ALIAS_PASS")
+    val keystorePwd = lp.getProperty("secrets.KEYSTORE_PASS") ?: System.getenv("secrets.KEYSTORE_PASS")
+    val alias = lp.getProperty("secrets.ALIAS_NAME") ?: System.getenv("secrets.ALIAS_NAME")
+    val pwd = lp.getProperty("secrets.ALIAS_PASS") ?: System.getenv("secrets.ALIAS_PASS")
 
     android.apply {
         if (keystorePwd != null) {
