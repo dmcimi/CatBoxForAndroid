@@ -12,7 +12,7 @@ require (
 	github.com/sagernet/sing-dns v0.1.9-0.20230911082806-425022bdc92b
 	github.com/sagernet/sing-tun v0.1.12-0.20230821065522-7545dc2d5641
 	github.com/ulikunitz/xz v0.5.10
-	golang.org/x/mobile v0.0.0-20231108233038-35478a0c49da
+	golang.org/x/mobile v0.0.0-20220722155234-aaac322e2105
 )
 
 require (
